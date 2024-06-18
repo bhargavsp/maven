@@ -61,6 +61,7 @@ XML - extensabel markup language
 |mvn test| used to run all the unit test cases|
 |mvn install| to stores the artifact to the local repo|
 |mvn deploy|it stores the artifact to the remote repo|
+|mvn clean package -Dskiptests/ mvn clean package -Dmaven.test.skip=true|skips/ignores the unit test cases and packages the source code |
 
 ## what happens whe we run the mvn pakcage command
 it checks all the dependencies in the .xml file and downloads them from the `maven repositories`
