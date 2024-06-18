@@ -19,7 +19,7 @@ Build: It is a process of creating the packages
 3. Enterprise applciations: ear --> enterprise archive, which contains multiple modules (web applications, standalone applciations and more....) all together it is a enterprise application
 
 ## When we use the Binary file and source file while downloading the maven?
-Binaray file - for packages
+Binaray file - for packages <br/>
 source file - enhance on top of the exisiting features, we use the source file.
 
 ## maven directory structure
@@ -46,4 +46,15 @@ JDK is Prerequisites
 
 **`we can also create an our own build file name according to the project bobwebapp.xml`**
 
+## Sample conten in the pom.xml file:
+| name | Notation |
+| :---: | :---: |
+| **`root tag or parent tag`** | `<project> </project>` |
+
+XML - extensabel markup language
+
+command used to build the maven is : **`mvn package`**
+
+what happens whe we run the mvn pakcage command
+it checks all the dependencies in the .xml file and downloads them from the `maven repositories`
 
