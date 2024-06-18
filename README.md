@@ -53,8 +53,52 @@ JDK is Prerequisites
 
 XML - extensabel markup language
 
-command used to build the maven is : **`mvn package`**
+## command used in maven 
+| command | Usage |
+| :---: | :---: |
+|mvn compile|it compiles the source code and unit test cases|
+|**`mvn package`**| use to build the java source code |
+|mvn test| used to run all the unit test cases|
+|mvn install| to stores the artifact to the local repo|
+|mvn deploy|it stores the artifact to the remote repo|
 
-what happens whe we run the mvn pakcage command
+## what happens whe we run the mvn pakcage command
 it checks all the dependencies in the .xml file and downloads them from the `maven repositories`
+1. maven local repo: It contains all our project dependencies, locally ex: ~/.m2/repository 
+2. maven central repo: It is maintened by the maven community, if our project dependency are not found in the local repository then it fetches an downloads the dependency to the local and from there the maven takes
+3. remote repo: companies maintain the remote repository by there own, within the company, so thet are found in our company server.
+
+## The developer writes the following files and give the devops for the deployment
+1. source code
+2. build script
+3. unit test cases based on the language
+
+## lifecycles of the maven
+|life cycle|goal|
+|:---:|:---:|
+|clean|clean:It delets the previous build files|
+|site|site:It will generates the documentation, isntead of manually generating the documentation, this will create an automatic documentation |
+|default|It has many goals <br/> validate: It will validate the project dir structure and check the resource files <br/>, compile <br/>, test, package, install, deploy|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
