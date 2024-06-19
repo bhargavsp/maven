@@ -61,7 +61,8 @@ XML - extensabel markup language
 |mvn test| used to run all the unit test cases|
 |mvn install| to stores the artifact to the local repo|
 |mvn deploy|it stores the artifact to the remote repo|
-|mvn clean package -Dskiptests/ mvn clean package -Dmaven.test.skip=true|skips/ignores the unit test cases and packages the source code |
+|mvn clean package -Dskiptests|ignores the unit test cases by running and packages the source code |
+|mvn clean package -Dmaven.test.skip=true|| skips the compile and running of the unit test cases |
 
 ## what happens whe we run the mvn pakcage command
 it checks all the dependencies in the .xml file and downloads them from the `maven repositories`
@@ -81,8 +82,24 @@ it checks all the dependencies in the .xml file and downloads them from the `mav
 |site|site:It will generates the documentation, isntead of manually generating the documentation, this will create an automatic documentation |
 |default|It has many goals <br/> validate: It will validate the project dir structure and check the resource files <br/>, compile <br/>, test, package, install, deploy|
 
+## what is the naming convention that the maven follows for the build artifact?
+from the pom.xml it takes the **`artifactid-versionNo.jar`**
+
+## inside the target folder which is creatd after a build package is done?
+|folder name |usage|
+|:---:|:---:|
+|test-classes|stores the .class files of the test cases|
+|classes| contains all the sources .class files|
+
+## change the maven default local repository path
+1. create a new repository where you want to save the new reposotory path
+2. set the path <localRepository>newpath<localRepository/>
+3. go to the config/setting.xml file and search for the <localRepository> and paste the new path and save it
+4. Now, if you run a build the ~/.m2/maven is replcaed by new path and hte build files are save in the new path
 
 
+## how to comment in XML
+`<!--      -->` this is the notation we are used to comment in the XML
 
 
 
