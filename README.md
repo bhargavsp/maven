@@ -15,7 +15,7 @@ Build: It is a process of creating the packages
 
 ## Using Java we can create different type of tha pplications
 1. Standalone applications: jar --> jar Archive, java code
-2. web applications: War --> web Archive, java code + web content (html/css/js/images/xml)
+2. web applications: War --> web Archive, java code + web content (html/css/js/images/xml/jsp)
 3. Enterprise applciations: ear --> enterprise archive, which contains multiple modules (web applications, standalone applciations and more....) all together it is a enterprise application
 
 ## When we use the Binary file and source file while downloading the maven?
@@ -101,7 +101,14 @@ from the pom.xml it takes the **`artifactid-versionNo.jar`**
 ## how to comment in XML
 `<!--      -->` this is the notation we are used to comment in the XML
 
+## can we create an own artifact name after build rather than default name
+yes, we can in the pom.xml, change the `<finalName>ownName<finalName/>` tag
 
+## requirement to create and ear artifact?
+we should have atleast 1war file and multiple jar files for creating an ear artifact. In the parent pom.xml we see the modules tag, there we cn see all the modules we have for this ear application
+
+## how to clean package for only one module in the whole ear package
+mvn clean package -pl MavenEnterpriseApp-web. Here `pl` is `project list`, `module name` is `MavenEnterpriseApp-web`
 
 
 
