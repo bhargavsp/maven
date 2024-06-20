@@ -18,6 +18,10 @@ Build: It is a process of creating the packages
 2. web applications: War --> web Archive, java code + web content (html/css/js/images/xml/jsp)
 3. Enterprise applciations: ear --> enterprise archive, which contains multiple modules (web applications, standalone applciations and more....) all together it is a enterprise application
 
+## can we run a JAR file?
+Yes we can in the command line, by using the following commands
+![image](https://github.com/bhargavsp/maven/assets/45779321/e57d66a0-886c-4238-878e-7160f2111315)
+
 ## When we use the Binary file and source file while downloading the maven?
 Binaray file - for packages <br/>
 source file - enhance on top of the exisiting features, we use the source file.
