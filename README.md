@@ -119,8 +119,18 @@ mvn clean package -pl MavenEnterpriseApp-web. Here `pl` is `project list`, `modu
 |:---:|:---:|
 wget https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.zip | download maven version in OPT directory
 unzip apache-maven-3.9.5-bin.zip | unzip maven
+vi ~/.bash_profile | export M2_HOME=/opt/apache-maven-3.9.5 ***and*** export PATH=$PATH:$M2_HOME/bin (for specific user)
+source ~/.bash_profile | to restart the bash profile
+mvn -version | version
 
-
+## cloning the java project
+|command |usage|
+|:---:|:---:|
+mkdir projects | login to sudo and create the folder and clone the project from github
+https://github.com/MithunTechnologiesDevOps/maven-web-application | sample java web application
+rm -r jenkinsfile* | to remove unnecessary files and folders
+mvn clean package | to run the build
+cd maven/target | the target folder is created once after the build, go to the folder to check the maven.war file 
 
 
 
