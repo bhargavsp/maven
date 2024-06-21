@@ -114,6 +114,12 @@ we should have atleast 1war file and multiple jar files for creating an ear arti
 ## how to clean package for only one module in the whole ear package
 mvn clean package -pl MavenEnterpriseApp-web. Here `pl` is `project list`, `module name` is `MavenEnterpriseApp-web`
 
+## maven configuration steps
+|command |usage|
+|:---:|:---:|
+wget https://dlcdn.apache.org/maven/maven-3/3.9.5/binaries/apache-maven-3.9.5-bin.zip | download maven version in OPT directory
+unzip apache-maven-3.9.5-bin.zip | unzip maven
+
 
 
 
