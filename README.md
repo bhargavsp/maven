@@ -132,6 +132,9 @@ rm -r jenkinsfile* | to remove unnecessary files and folders
 mvn clean package | to run the build
 cd maven/target | the target folder is created once after the build, go to the folder to check the maven.war file 
 
+### what if we want to download the packages from the remote repository?
+1. we should configure the remote repository URL in the pom.xml file in the ***repository*** tag
+2. still the build cant download the file from remote repository so then we have go to settings.xml file in the conf direcotry in maven home and allow in the mirror tag ![image](https://github.com/bhargavsp/maven/assets/45779321/d9cd155d-4130-4984-9527-e02f40fbdb17)
 
 
 
