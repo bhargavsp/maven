@@ -8,5 +8,6 @@
 
 
 ## SONARQUBE
-1. For sonarQube we are configuring both the URL and CREDENTIALS in the ***propeties*** tag
- 
+1. For sonarQube we are configuring both the URL and CREDENTIALS in the ***propeties*** tag <br/> ![image](https://github.com/bhargavsp/maven/assets/45779321/f7a7d737-da05-4699-88d6-c49b432e9bb4)
+2. for the credentials we also give the sonar token instead of username and password <br/> ![image](https://github.com/bhargavsp/maven/assets/45779321/fd99ad2c-1a2d-46e0-b12c-2b5bc5e735de)
+3.  to run the sonar in maven **`mvn sonar:sonar`** first sonar represents the plugin name and second sonar after colan represents the goal name
