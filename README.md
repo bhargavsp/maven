@@ -33,13 +33,18 @@ As maven is not a **`executable software`**. we want to extract an use it. the f
 3. conf: It contains all the configurations. Ex: settings.xml
 4. lib: all the dependency libraries jar files
 
-## Maven installation: 
+## Maven configuration 
 java is the Prerequisites 
 JDK is Prerequisites
 | Package |  Link |
 | :---: | :---: |
 | Installing java 11 on amazon linux machine | https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/amazon-linux-install.html |
-| Install maven | https://mithuntechnologies-devops.blogspot.com/search/label/Maven |
+| Install maven | https://maven.apache.org/download.cgi *and* https://mithuntechnologies-devops.blogspot.com/search/label/Maven |
+install wget and unzip in OPT directpory | `yum install wget unzip -y`
+Set the class path/Environmental Variable For Specific User | **`vi ~/.bash_profile`** and add these 2 lines **`export M2_HOME=/opt/apache-maven-3.9.5`** and **`export PATH=$PATH:$M2_HOME/bin`**
+source the profile | `source ~/.bash_profile`
+Set the class path/Environmental Variable For All Users | **`vi /etc/profile`** and **`export M2_HOME=/apache-maven-3.9.5`** and **`export PATH=$PATH:$M2_HOME/bin`**
+Check the Maven version | mvn -version
 
 ## build files in the different Build tools
 | Build tool | filename |
