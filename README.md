@@ -132,7 +132,7 @@ mvn -version | version
 |command |usage|
 |:---:|:---:|
 mkdir projects | login to sudo and create the folder and clone the project from github
-https://github.com/MithunTechnologiesDevOps/maven-web-application | sample java web application
+install the git to clone the project(sample web application) | https://github.com/MithunTechnologiesDevOps/maven-web-application
 rm -r jenkinsfile* | to remove unnecessary files and folders
 mvn clean package | to run the build
 cd maven/target | the target folder is created once after the build, go to the folder to check the maven.war file 
